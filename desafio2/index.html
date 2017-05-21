@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>DESAFIO #2 FRONTEND</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/medias-queries.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<script type="text/javascript">
+		function show_menu() {
+			var menu = document.getElementById("menu");
+			if (menu.className == "menu-ul") {
+				menu.classList.add("responsive");
+			}else{
+				menu.className = "menu-ul";
+			}
+		}
+
+		function scroll_footer(){
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	</script>
+</head>
+<body>
+	<header class="header">
+		<section class="header-section-menu">
+			<nav class="nav-bar">
+				<div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+				<ul class="menu-ul" id="menu">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">IMAGENS</a></li>
+					<li><a href="javascript:void(0);" onclick="scroll_footer()">FOOTER</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="show_menu()">&#9776;</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="header-section-img">
+			<div class="img-body">
+				<h1 class="hp">HELLO PLANET</h1>
+			</div>
+		</section>
+	</header>
+	<section class="container">
+		<article>
+			<h1 class="title">QUALIDADE E SINCRONIA</h1>
+		</article>
+		<div class="content center images">
+			<div class="thumbnail">
+				<div class="relative">
+					<img src="img/img1.png" class="img-responsive">
+					<div class="bottom center">
+						<p class="img-size">380 x 380</p>
+					</div>
+				</div>
+				<p class="thumbnail-text">IMAGEM 1</p>
+			</div>
+			<div class="thumbnail">
+				<div class="relative">
+					<img src="img/img1.png" class="img-responsive">
+					<div class="bottom center">
+						<p class="img-size">380 x 380</p>
+					</div>
+				</div>
+				<p class="thumbnail-text">IMAGEM 2</p>
+			</div>
+			<div class="thumbnail">
+				<div class="relative">
+					<img src="img/img1.png" class="img-responsive">
+					<div class="bottom center">
+						<p class="img-size">380 x 380</p>
+					</div>
+				</div>
+				<p class="thumbnail-text">IMAGEM 3</p>
+			</div>
+			<div class="thumbnail">
+				<div class="relative">
+					<img src="img/img1.png" class="img-responsive">
+					<div class="bottom center">
+						<p class="img-size">380 x 380</p>
+					</div>
+				</div>
+				<p class="thumbnail-text">IMAGEM 4</p>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<section>
+			<article>
+				<h3 class="text-footer">DESAFIO #2</h3>
+				<h3 class="text-footer right">Maratona de Desenvolvimento</h3>
+			</article>
+		</section>
+	</footer>
+</body>
+</html>
